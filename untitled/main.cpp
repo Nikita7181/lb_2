@@ -20,7 +20,8 @@ cout << "task 1" << endl;
             cout << "Letter" << endl;
         } else if (c >= 97 && c <= 122) {
             cout << "Letter" << endl;
-        }
+        } 
+        else cout << "Unknown character" << endl;
     }
     {int x,y;
     cout << "task 3"<< endl;
@@ -98,22 +99,6 @@ int l,k,n1,n2,n3,n4,n5;
     }
     cout << "n5= ";
     cout << n5 << endl;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     return 0;
     }
 
