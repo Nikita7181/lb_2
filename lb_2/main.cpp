@@ -60,18 +60,5 @@ int main() {
         k=static_cast<int>(d*pow(10, 2))%10;
     }
     cout << n1 << endl;
-
-
-
-
-
-
-
-
-
-
-
-
-
     return 0;
 }
