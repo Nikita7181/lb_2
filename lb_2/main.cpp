@@ -1,4 +1,4 @@
-##include <iostream>
+#include <iostream>
 #include <cmath>
 using std::cout;
 using std::cin;
@@ -14,12 +14,19 @@ int main() {
     cout << "Entered value: ";
     cin >> c;
     {
-        if (c >= 48 && c <= 57) {
+        if (c >= 48 && c <= 57)
+        {
             cout << "Number" << endl;
-        } else if (c >= 65 && c <= 90) {
+        } else if (c >= 65 && c <= 90)
+        {
             cout << "Letter" << endl;
-        } else if (c >= 97 && c <= 122) {
+        } else if (c >= 97 && c <= 122)
+        {
             cout << "Letter" << endl;
+        }
+        else
+        {
+            cout << "another symbol" << endl;
         }
     }
     {int x,y;
@@ -43,7 +50,7 @@ int main() {
             case 4:
                 cout << "y(x)= " << pow(x, 3) << endl;
                 break;
-
+            
         }
     }
     cout << "task 4" << endl;
@@ -52,6 +59,7 @@ int main() {
     cout << "Entered value x=" << endl;
     cin >> x ;
     f=log(1+x);
+    k=static_cast<int>(d*pow(10, 2))%10;
     l=static_cast<int>(f*pow(10, 2))%10;
     while (l!=k)
     {
