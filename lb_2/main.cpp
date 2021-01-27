@@ -54,18 +54,24 @@ int main() {
         }
     }
     cout << "task 4" << endl;
-    float x,f,d,s;
-    int n1=1;
+    float x,f,s;
+    int n1=2;
     cout << "Entered value x=" << endl;
     cin >> x ;
-    f=log(1+x)/1000000;// тут меняем точность
-    d = (pow(-1, (n1 + 1)) * ((pow(x, n1)) / n1));
-    while (std::abs(d)>=f)
-    {
-        d = (pow(-1, (n1 + 1)) * ((pow(x, n1)) / n1));
-        s = s + d;
-        n1++;
-    }
-    cout <<"rez = "<< s << " " << n1-1 << endl;
+    s = x;
+    float k =0.01;
+    f=log(1+x);
+    do
+        {
+        
+            do
+            {
+                s = s + (pow(-1, (n1 + 1)) * ((pow(x, n1)) / n1));
+                n1++;
+            }
+            while((f-s)>k);
+            k = k / 10;
+            cout << "rez= " << s << " " << "iter= " << n1-1 << endl;
+    }while(k>0.000001);
     return 0;
 }
