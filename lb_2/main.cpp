@@ -59,6 +59,7 @@ int main() {
     cout << "Entered value x=" << endl;
     cin >> x ;
     f=log(1+x);
+    d = (pow(-1, (n1 + 1)) * ((pow(x, n1)) / n1));
     k=static_cast<int>(d*pow(10, 2))%10;
     l=static_cast<int>(f*pow(10, 2))%10;
     while (l!=k)
